@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="es">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/img/iconoventana.png"> <!--Logo pestaña de ventana-->
+  <link rel="stylesheet" href="/css/navbar.css">
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/noticias.css">
+  <script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#navbar").load("navbar.html"); 
+    });
+    </script> 
+  <title>FrostGames</title>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <div id="navbar"></div>
+  </header>
+  <!-- BANNER Y LOGO -->
+  <div class="row posicion imagen content-fluid">
+
+    <div class="col-sm 12 col-md-2 col-xl-3 logo"><img src="/img/logonavbar.png" alt="" width="300px" height="300px">
+    </div>
+    <div class="col-sm 12 col-md-2 col-xl-6"><img class="letras" src="/img/text-1671194747529-removebg-preview.png"
+        alt=""></div>
+    <div class="col-sm 12 col-md-2 col-xl-3">&nbsp;</div>
+  </div>
+  <!-- CONTENIDO PRINCIPAL -->
+
+  <div class="row">
+    <div class="col-xl-1"> &nbsp;</div>
+    <div class="col-xl-5">
+
+      <div class="card text-center border-info">
+        <div class="row g-0 cartas">
+          <div class="col-xl-4">
+            <img src="/img/noticias/legacy.jpeg" class="img-fluid rounded-start imge">
+          </div>
+
+          <div class="col-xl-8">
+            <div class="card-body">
+              <h5 class="card-title">Hogwarts Legacy</h5>
+              <p style="text-align: justify;">Hemos probado 'Hogwarts Legacy', y sí: el mundo abierto en el universo de Harry Potter parece dar todo
+                lo que promete
+                
+
+                <span id="dots1" style="text-align: justify;">...</span><span id="more1"> Lo mejor que podemos decir de 'Hogwart's Legacy' es que da
+                  exactamente lo que promete, o al menos eso puede decirse en apariencia: un mundo abierto ambientado en
+                  el universo de Harry Potter (aunque en el siglo XIX, décadas antes del tiempo en el que transcurrían
+                  novelas y películas). Buena parte de lo esperable en un sandbox cuyo núcleo es el mágico castillo de
+                  Hogwarts está aquí: de la configuración estética exhaustiva a las misiones secundarias, pasando por
+                  los minijuegos o los espacios amplísimos llenos de secretos para explorar.
+
+                  Hemos tenido la ocasión de probar una mínima parte del juego que, obviamente, no nos sirve para dar
+                  una opinión definitiva, pero sí un juicio aproximado. Hemos visto una introducción, hemos trasteado
+                  por los menús y hemos participado en un par de tutoriales y alguna misión. No os podemos hablar de
+                  todo porque así son los embargos, pero si el juego mantiene el nivel visual y la variedad de este
+                  aperitivo, sin duda estamos ante uno de los mundos abiertos del año
+                  .</span>
+              </p>
+              <script>
+                function myFunction1() {
+                  var dots1 = document.getElementById("dots1");
+                  var moreText1 = document.getElementById("more1");
+                  var btnText1 = document.getElementById("myBtn1");
+
+                  if (dots1.style.display === "none") {
+                    dots1.style.display = "inline";
+                    btnText1.innerHTML = "Leer más";
+                    moreText1.style.display = "none";
+                  } else {
+                    dots1.style.display = "none";
+                    btnText1.innerHTML = "Leer menos";
+                    moreText1.style.display = "inline";
+                  }
+                }
+              </script>
+              <button onclick="myFunction1()" id="myBtn1" class="botoncillo">Leer más</button>
+          
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+    <div class="col-xl-5">
+
+      <div class="card text-center border-info">
+        <div class="row g-0 cartas">
+          <div class="col-xl-4">
+            <img src="/img/noticias/zombies.jpeg" class="img-fluid rounded-start imge">
+          </div>
+
+          <div class="col-xl-8">
+            <div class="card-body">
+              <h5 class="card-title">The Last of us</h5>
+              <p style="text-align: justify;">'The Last of Us' ha entendido a la perfección que los zombis son lo más aburrido de las series
+                de zombis.Las películas y las series de zombis rara vez van
+                sobre los monstruos.
+
+                <span id="dots2" style="text-align: justify;">...</span><span id="more2"> De hecho, muy a menudo las películas de monstruos
+                  no nos hablan de los
+                  monstruos, sino que los usan como reactivo para hablarnos de las personas. Cómo reaccionan los
+                  humanos a lo monstruos, o qué dice de nuestro comportamiento el enfrentarse a una situación
+                  radicalmente extraña, como es la de cruzarse con un ser que pone en duda nuestra idea de la
+                  normalidad.
+
+                  En pocos casos está tan claro como con los zombis, que ya desde su configuración clásica, como
+                  la trilogía inicial de George A. Romero que arranca con 'La noche de los muertos vivientes' y
+                  continúa con su película más influyente, 'Zombi', usa a los monstruos como telón de fondo. Lo
+                  que realmente le interesa al cine de zombis es examinar cómo los humanos se organizan en torno
+                  a un mundo en descomposición.</span>
+              </p>
+              <script>
+                function myFunction2() {
+                  var dots2 = document.getElementById("dots2");
+                  var moreText2 = document.getElementById("more2");
+                  var btnText2 = document.getElementById("myBtn2");
+
+                  if (dots2.style.display === "none") {
+                    dots2.style.display = "inline";
+                    btnText2.innerHTML = "Leer más";
+                    moreText2.style.display = "none";
+                  } else {
+                    dots2.style.display = "none";
+                    btnText2.innerHTML = "Leer menos";
+                    moreText2.style.display = "inline";
+                  }
+                }
+              </script>
+              <button onclick="myFunction2()" id="myBtn2" class="botoncillo">Leer más</button>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="col-xl-1">&nbsp;</div>
+</div>
+
+    <div class="row mt-5">
+      <div class="col-xl-1"> &nbsp;</div>
+      <div class="col-xl-5">
+
+        <div class="card text-center border-info">
+          <div class="row g-0 cartas">
+            <div class="col-xl-4">
+              <img src="/img/noticias/animal.jpeg" class="img-fluid rounded-start imge">
+            </div>
+
+            <div class="col-xl-8">
+              <div class="card-body">
+                <h5 class="card-title">Animal Crossing</h5>
+                <p style="text-align: justify;">Animal Crossing New Horizons: todos los Bichos disponibles en febrero 2023
+
+                  <span id="dots3" style="text-align: justify;">...</span><span id="more3"> Con la llegada del mes de febrero Animal Crossing: New
+                    Horizons recibe un cambio en la fauna que podemos cazar y donar para el museo de Sócrates, tanto en
+                    España como en el resto del mundo. Como es habitual, algunos bichos del juego se marchan para
+                    regresar en otra época del año, mientras que algunos nuevos aparecen para que podamos hacernos con
+                    ellos.
+
+                    Completar la enorme colección de animales del museo de Sócrates es una tarea enorme. Entran en juego
+                    factores como horarios de aparición, lugares y zonas concretas, así que hacerse con todos los bichos
+                    no es una actividad sencilla. No obstante, para hacérosla un poco más fácil, a continuación reunimos
+                    todos los bichos que hay disponibles en el mes de febrero de 2023 para cazar en Animal Crossing: New
+                    Horizons.
+
+                  </span>
+                </p>
+                <script>
+                  function myFunction3() {
+                    var dots3 = document.getElementById("dots3");
+                    var moreText3 = document.getElementById("more3");
+                    var btnText3 = document.getElementById("myBtn3");
+
+                    if (dots3.style.display === "none") {
+                      dots3.style.display = "inline";
+                      btnText3.innerHTML = "Leer más";
+                      moreText3.style.display = "none";
+                    } else {
+                      dots3.style.display = "none";
+                      btnText3.innerHTML = "Leer menos";
+                      moreText3.style.display = "inline";
+                    }
+                  }
+                </script>
+                <button onclick="myFunction3()" id="myBtn3" class="botoncillo">Leer más</button>
+             
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+      </div>
+
+
+
+      <div class="col-xl-5">
+
+        <div class="card text-center border-info">
+          <div class="row g-0 cartas">
+            <div class="col-xl-4">
+              <img src="/img/noticias/dragonball.jpeg" class="img-fluid rounded-start imge">
+            </div>
+
+            <div class="col-xl-8">
+              <div class="card-body">
+                <h5 class="card-title">Fornite X Dragon Ball</h5>
+                <p style="text-align: justify;">Son Gohan y Piccolo de Dragon Ball ya están disponibles en Fortnite.
+
+                  <span id="dots4" style="text-align: justify;">...</span><span id="more4"> Hoy junto con la actualización 23.30 Fortnite Battle
+                    Royale, el popular juego de Epic Games, recibe dos nuevas skins: Son Gohan y Piccolo de Dragon Ball,
+                    el mítico manga y anime de Akira Toriyama. Una nueva colaboración de estos dos universos tras que el
+                    pasado verano llegaran Goku y Vegeta, ahora centrada en Dragon Ball Super: Super Hero, la exitosa
+                    película.</span>
+                </p>
+                <script>
+                  function myFunction4() {
+                    var dots4 = document.getElementById("dots4");
+                    var moreText4 = document.getElementById("more4");
+                    var btnText4 = document.getElementById("myBtn4");
+
+                    if (dots4.style.display === "none") {
+                      dots4.style.display = "inline";
+                      btnText4.innerHTML = "Leer más";
+                      moreText4.style.display = "none";
+                    } else {
+                      dots4.style.display = "none";
+                      btnText4.innerHTML = "Leer menos";
+                      moreText4.style.display = "inline";
+                    }
+                  }
+                </script>
+                <button onclick="myFunction4()" id="myBtn4" class="botoncillo">Leer más</button>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="col-xl-1">&nbsp;</div>
+
+    </div>
+
+
+
+    <div class="row mt-5">
+      <div class="col-xl-1"> &nbsp;</div>
+      <div class="col-xl-5">
+
+        <div class="card text-center border-info">
+          <div class="row g-0 cartas">
+            <div class="col-xl-4">
+              <img src="/img/noticias/god.jpeg" class="img-fluid rounded-start imge">
+            </div>
+
+            <div class="col-xl-8">
+              <div class="card-body">
+                <h5 class="card-title">God of War</h5>
+                <p style="text-align: justify;">God of War de 2018 demuestra que el fanservice también se puede usar para hacer el bien
+                  y dejarnos una de las mejores escenas de los últimos años
+
+                  <span id="dots5" style="text-align: justify;">...</span><span id="more5"> En el mundo de los
+                    videojuegos existen sagas épicas y luego está la saga God of War. El fantasma de Esparta lleva con
+                    nosotros 18 años y nos ha dejado grabado en nuestro recuerdo innumerables momentos de pura
+                    brutalidad luchando contra dioses, semidioses y criaturas mitológicas en escenarios increíbles.
+
+                    Los tatuajes de Kratos junto a sus dos afiladas y flamígeras espadas han hecho del general Espartano
+                    todo un icono de los fans de PlayStation, marcando a toda una generación y siendo considerado como
+                    uno de los personajes que ha protagonizado la mayor odisea de venganza jamás escrita en un
+                    videojuego. Sin embargo, la mayoría de fans ya dimos por concluída esta odisea con el fantasma de
+                    Esparta destruyendo el Olimpo en God of War 3. A partir de ahí, se abrían nuevos caminos para el
+                    personaje que parecían totalmente alejados de los tiempos en los que la furia asesina dominaba sus
+                    actos. O eso creíamos.
+                    .</span>
+                </p>
+                <script>
+                  function myFunction5() {
+                    var dots5 = document.getElementById("dots5");
+                    var moreText5 = document.getElementById("more5");
+                    var btnText5 = document.getElementById("myBtn5");
+
+                    if (dots5.style.display === "none") {
+                      dots5.style.display = "inline";
+                      btnText5.innerHTML = "Leer más";
+                      moreText5.style.display = "none";
+                    } else {
+                      dots5.style.display = "none";
+                      btnText5.innerHTML = "Leer menos";
+                      moreText5.style.display = "inline";
+                    }
+                  }
+                </script>
+                <button onclick="myFunction5()" id="myBtn5" class="botoncillo">Leer más</button>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+      </div>
+
+
+
+      <div class="col-xl-5">
+
+        <div class="card text-center border-info">
+          <div class="row g-0 cartas">
+            <div class="col-xl-4">
+              <img src="/img/noticias/star.jpeg" class="img-fluid rounded-start imge">
+            </div>
+
+            <div class="col-xl-8">
+              <div class="card-body">
+                <h5 class="card-title">Star Wars Jedi Survivor</h5>
+                <p style="text-align: justify;">Star Wars Jedi Survivor retrasa su fecha de lanzamiento, pero no será por muchas semanas: EA necesita
+                  tiempo para corregir errores y mejorar el rendimiento
+
+                  <span id="dots6" style="text-align: justify;">...</span><span id="more6">La secuela desarrollada por Respawn saldrá el 28 de abril,
+                    seis semanas después de la fecha original y coincidirá con Dead Island 2.
+                    Si la primera mitad de 2023 apuntaba a ser increíble en cuanto a lanzamientos de videojuegos, en
+                    buena medida es por Star Wars Jedi: Survivor. No obstante, EA necesita más tiempo para finalizar el
+                    desarrollo de este título. Podemos esperar grandes cosas porque su historia tendrá un tono mucho más
+                    oscuro, y el reciente gameplay tráiler que enseñaron en The Game Awards 2022 es la prueba de ello.
+                  </span>
+                </p>
+                <script>
+                  function myFunction6() {
+                    var dots6 = document.getElementById("dots6");
+                    var moreText6 = document.getElementById("more6");
+                    var btnText6 = document.getElementById("myBtn6");
+
+                    if (dots6.style.display === "none") {
+                      dots6.style.display = "inline";
+                      btnText6.innerHTML = "Leer más";
+                      moreText6.style.display = "none";
+                    } else {
+                      dots6.style.display = "none";
+                      btnText6.innerHTML = "Leer menos";
+                      moreText6.style.display = "inline";
+                    }
+                  }
+                </script>
+                <button onclick="myFunction6()" id="myBtn6" class="botoncillo">Leer más</button>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="col-xl-1">&nbsp;</div>
+
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-xl-1"> &nbsp;</div>
+      <div class="col-xl-5">
+
+        <div class="card text-center border-info">
+          <div class="row g-0 cartas">
+            <div class="col-xl-4">
+              <img src="/img/noticias/resident.jpeg" class="img-fluid rounded-start imge">
+            </div>
+
+            <div class="col-xl-8">
+              <div class="card-body">
+                <h5 class="card-title">Resident Evil 4</h5>
+                <p style="text-align: justify;">Resident Evil 4 Remake muestra un nuevo tráiler y revela detalles inéditos que ilusionan: nuevas
+                  armas, más enemigos, misiones secundarias y más
+                  <span id="dots7" style="text-align: justify;">...</span><span id="more7"> Tan solo quedan unos meses para que Resident Evil 4
+                    Remake salga al mercado. Los fans de la saga están ansiosos por conocer más novedades sobre el
+                    regreso de esta obra. Recientemente os enseñamos nuevas imágenes que demostraban el gran nivel
+                    técnico en algunos de sus escenarios más populares. Es más, la compañía japonesa fue más allá en
+                    este aspecto y comentó que habían decidido ampliar una parte muy criticada por los fans.</span>
+                </p>
+                <script>
+                  function myFunction7() {
+                    var dots7 = document.getElementById("dots7");
+                    var moreText7 = document.getElementById("more7");
+                    var btnText7 = document.getElementById("myBtn7");
+
+                    if (dots7.style.display === "none") {
+                      dots7.style.display = "inline";
+                      btnText7.innerHTML = "Leer más";
+                      moreText7.style.display = "none";
+                    } else {
+                      dots7.style.display = "none";
+                      btnText7.innerHTML = "Leer menos";
+                      moreText7.style.display = "inline";
+                    }
+                  }
+                </script>
+                <button onclick="myFunction7()" id="myBtn7" class="botoncillo">Leer más</button>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+      </div>
+
+
+
+      <div class="col-xl-5">
+
+        <div class="card text-center border-info">
+          <div class="row g-0 cartas">
+            <div class="col-xl-4">
+              <img src="/img/noticias/final.jpeg" class="img-fluid rounded-start imge">
+            </div>
+
+            <div class="col-xl-8">
+              <div class="card-body">
+                <h5 class="card-title">Final Fantasy VII</h5>
+                <p style="text-align: justify;">El "Día de Final Fantasy VII" ya es una realidad en Japón: Square Enix celebra el 26 aniversario del
+                  juego por partida doble
+
+                  <span id="dots8" style="text-align: justify;">...</span><span id="more8"> Hoy se cumplen 26 años desde que Square Enix sorprendió a
+                    los fans de los JRPG con el lanzamiento de una aventura que todavía genera aplausos: Final Fantasy
+                    VII. Más allá de ser un referente en el género y regresar en forma de remake, el título original de
+                    la primera PlayStation se observa en Japón como una obra de gran importancia tanto para el sector de
+                    los videojuegos como para el ámbito del entretenimiento. Y, por ello, el país no ha dudado en
+                    convertir el 31 de enero en el Día de Final Fantasy VII.</span>
+                </p>
+                <script>
+                  function myFunction8() {
+                    var dots8 = document.getElementById("dots8");
+                    var moreText8 = document.getElementById("more8");
+                    var btnText8 = document.getElementById("myBtn8");
+
+                    if (dots8.style.display === "none") {
+                      dots8.style.display = "inline";
+                      btnText8.innerHTML = "Leer más";
+                      moreText8.style.display = "none";
+                    } else {
+                      dots8.style.display = "none";
+                      btnText8.innerHTML = "Leer menos";
+                      moreText8.style.display = "inline";
+                    }
+                  }
+                </script>
+                <button onclick="myFunction8()" id="myBtn8" class="botoncillo">Leer más</button>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="col-xl-1">&nbsp;</div>
+
+
+
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-xl-1"> &nbsp;</div>
+      <div class="col-xl-5">
+
+        <div class="card text-center border-info">
+          <div class="row g-0 cartas">
+            <div class="col-xl-4">
+              <img src="/img/noticias/lol.jpeg" class="img-fluid rounded-start imge">
+            </div>
+
+            <div class="col-xl-8">
+              <div class="card-body">
+                <h5 class="card-title">League of Legends</h5>
+                <p style="text-align: justify;">Riot no quiso pagar al hacker que robó el código fuente de League of Legends, pero él sigue
+                  intentando hacer negocio: pide un millón de euros por los datos
+
+                  <span id="dots9" style="text-align: justify;">...</span><span id="more9"> A mediados del mes de enero, Riot Games sufrió un ataque
+                    informático que modificó sus planes con respecto al futuro de League of Legends. Según expuso la
+                    compañía, se trató de un secuestro de datos (ransomware) ejecutado mediante técnicas de ingeniería
+                    social que dejó al descubierto el código fuente de LoL y Teamfight Tactics. Ahora, casi un mes
+                    después, un usuario que afirma haber sido el beneficiario del ataque ha comenzado una subasta en
+                    internet con el objetivo de vender los más de 70GB de código obtenidos. El precio inicial de la
+                    puja, agarraos, es de un millón de dólares.
+
+                  </span>
+                </p>
+                <script>
+                  function myFunction9() {
+                    var dots9 = document.getElementById("dots9");
+                    var moreText9 = document.getElementById("more9");
+                    var btnText9 = document.getElementById("myBtn9");
+
+                    if (dots9.style.display === "none") {
+                      dots9.style.display = "inline";
+                      btnText9.innerHTML = "Leer más";
+                      moreText9.style.display = "none";
+                    } else {
+                      dots9.style.display = "none";
+                      btnText9.innerHTML = "Leer menos";
+                      moreText9.style.display = "inline";
+                    }
+                  }
+                </script>
+                <button onclick="myFunction9()" id="myBtn9" class="botoncillo">Leer más</button>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+      </div>
+
+
+
+      <div class="col-xl-5">
+
+        <div class="card text-center border-info">
+          <div class="row g-0 cartas">
+            <div class="col-xl-4">
+              <img src="/img/noticias/hallo.jpeg" class="img-fluid rounded-start imge">
+            </div>
+
+            <div class="col-xl-8">
+              <div class="card-body">
+                <h5 class="card-title">Halo</h5>
+                <p style="text-align: justify;">El Jefe Maestro se pasa al Unreal Engine: los autores de Halo estarían encarando el futuro con el
+                  motor de Epic Games y ya tendrían un juego en marcha
+
+                  <span id="dots10" style="text-align: justify;">...</span><span id="more10">Hace tan solo unos días, Microsoft anunció una serie de
+                    recortes que afectarían a 10.000 puestos de trabajo, lo que incluía estudios desarrolladores y áreas
+                    no relacionadas con los videojuegos. Sin embargo, los fans de Halo temieron al saber que 343
+                    Industries se había visto muy afectada por esta ola de despidos, aunque la situación se agravó
+                    cuando exempleados de la compañía acusaron a la empresa de "llevar a Halo al fracaso".</span>
+                </p>
+                <script>
+                  function myFunction10() {
+                    var dots10 = document.getElementById("dots10");
+                    var moreText10 = document.getElementById("more10");
+                    var btnText10 = document.getElementById("myBtn10");
+
+                    if (dots10.style.display === "none") {
+                      dots10.style.display = "inline";
+                      btnText10.innerHTML = "Leer más";
+                      moreText10.style.display = "none";
+                    } else {
+                      dots10.style.display = "none";
+                      btnText10.innerHTML = "Leer menos";
+                      moreText10.style.display = "inline";
+                    }
+                  }
+                </script>
+                <button onclick="myFunction10()" id="myBtn10" class="botoncillo">Leer más</button>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="col-xl-1">&nbsp;</div>
+
+    </div>
+  
+
+  <!-- Footer -->
+
+  <footer class="text-center text-lg-start text-muted" style="background-color: #82ACF5" margin>
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column 3-->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- LOGO IZQUIERDA -->
+            <a class="navbar-brand" href="#"><img src="/img/logo-prototipo.png" alt="logo-nav" width="100px"
+                height="100px"></a>
+          </div>
+          <!-- Grid column 2-->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- REDES SOCIALES -->
+            <h6 class="text-uppercase fw-bold mb-4" style="color: #4850A8;">
+              Redes sociales
+            </h6>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="#4850A8" class="bi bi-facebook"
+              viewBox="0 0 16 16">
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="#4850A8" class="bi bi-twitter"
+              viewBox="0 0 16 16">
+              <path
+                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="#4850A8" class="bi bi-instagram"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+            </svg>
+          </div>
+          <!-- Grid column 3 -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+            <!-- ENLACES -->
+            <h6 class="text-uppercase fw-bold mb-4" style="color: #4850A8;">
+              terminos y condiciones
+            </h6>
+            <p style="color: #4850A8;">
+              <a href="#!" class="testyle=" color: #4850A8;xt-center">Preguntas frecuentes</a>
+            </p>
+            <p style="color: #4850A8;">
+              <a href="#!" class="text-center">Ayuda</a>
+            </p>
+          </div>
+          <!-- Grid column 4-->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- CONTACTOS -->
+            <h6 class="text-uppercase fw-bold mb-4" style="color: #4850A8;">Contactanos</h6>
+            <p style="color: #4850A8 ;"><i class="me-3"></i>Sevilla, 41210, ES</p>
+            <p style="color: #4850A8;"><i class="me-3"></i>+34 635 289 501</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Copyright -->
+    <div class="text-center p-4 text-white">
+      Â© 2021 Copyright: All rights reserved.
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</body>
+
+</html>

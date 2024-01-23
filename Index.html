@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/iconoventana.png"> <!--Logo pestaña de ventana-->
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#navbar").load("navbar.html"); 
+    });
+    </script> 
+    <title>FrostGames</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header>
+        <div id="navbar"></div>
+    </header>
+    <!-- BANNER Y LOGO -->
+    <div class="row posicion imagen content-fluid">
+
+        <div class="col-sm 12 col-md-2 col-xl-3 logo"><img src="/img/logonavbar.png" alt="" width="300px"
+                height="300px"></div>
+        <div class="col-sm 12 col-md-2 col-xl-6"><img class="letras"
+                src="/img/text-1671194747529-removebg-preview.png" alt=""></div>
+        <div class="col-sm 12 col-md-2 col-xl-3">&nbsp;</div>
+    </div>
+    <!-- CONTENIDO PRINCIPAL -->
+    <section class="contenido">
+        <div class="row">
+            <div class="col-xl-2"></div>
+            <div class="col-xl-8">
+
+                <!--CARRUSEL LO MAS VENDIDO-->
+                <br>
+                <br>
+                <br>
+                <h2>Lo más vendido</h2>
+                <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <!--CARRUSEL BOTONES DE CONTROLADOR PAGINA-->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+
+                    <div class="carousel-inner"> <!--CARRUSEL IMAGENES DE JUEGOS-->
+                        <div class="carousel-item active item imgnormalizada">
+                            <img src="/img/JMV/cyberpunk.jpg" class="d-block w-100" alt="cyberpunkPortada">
+                        </div>
+
+                        <div class="carousel-item item imgnormalizada">
+                            <img src="/img/JMV/wicher.jpg" class="d-block w-100" alt="witcherPortada">
+                        </div>
+                        <div class="carousel-item item imgnormalizada">
+                            <img src="/img/JMV/Warcraft.jpg" class="d-block w-100" alt="warcraftPortada">
+                        </div>
+                    </div>
+
+                    <!--CARRUSEL BOTONES DE DIRECCION DE PAGINA-->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">atras</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">siguiente</span>
+                    </button>
+                </div><br><br>
+
+                <!--CARRUSEL NOVEDADES CON CARD-->
+
+                <section class="pt-5 pb-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <h2>Novedades</h2>
+                            </div>
+                            <div class="col-6 text-right"> <!--Botones del carrusel con card-->
+                                <a class="btn btn-transparent mb-3 mr-1 mx-0" href="#carouselExampleIndicators2"
+                                    role="button" data-slide="prev">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000"
+                                        class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+                                    </svg>
+                                </a>
+                                <a class="btn btn-transparent mb-3 mx-0" href="#carouselExampleIndicators2" role="button"
+                                    data-slide="next">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000"
+                                        class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                                    </svg>
+                                </a>
+                            </div>   <!--FIN Botones del carrusel con card-->
+
+                            <div class="col-12">
+                                <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="row">
+
+                                                <div class="col-md-4 mb-3">
+                                                    <div class="card">
+                                                        <img class="img-fluid" alt="100%x280"
+                                                            src="/img/novedades/Child of Light.jpg">
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Child of Light</h4>
+                                                            <p class="card-text">Asume el papel de Aurora, una joven
+                                                                princesa de corazón puro a la que han convocado al reino
+                                                                de Lemuria. Embárcate en una misión para recuperar las
+                                                                tres fuentes de luz, derrotar a la Reina negra.</p>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 mb-3">
+                                                    <div class="card">
+                                                        <img class="img-fluid" alt="100%x280"
+                                                            src="/img/novedades/civilization.jpg">
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Civilization VI</h4>
+                                                            <p class="card-text">Explora nuevos territorios, investiga
+                                                                tecnologías, conquista a tus enemigos y enfréntate a los
+                                                                líderes más famosos de la historia para crear la mayor
+                                                                civilización jamás conocida.</p>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 mb-3">
+                                                    <div class="card">
+                                                        <img class="img-fluid" alt="100%x280"
+                                                            src="/img/novedades/diablo.jpg">
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Diablo III</h4>
+                                                            <p class="card-text">La guerra eterna de los Cielos y los
+                                                                Infiernos, encarnaras a una de las clases: bárbaro,
+                                                                médico brujo, mago, monje o cazador de demonios.</p>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="row">
+
+                                                <div class="col-md-4 mb-3">
+                                                    <div class="card">
+                                                        <img class="img-fluid" alt="100%x280"
+                                                            src="/img/novedades/empires.jpg">
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Age of empires IV</h4>
+                                                            <p class="card-text">donde tú estarás en el centro de las
+                                                                épicas batallas históricas que formaron el mundo.
+                                                                Incluye maneras tanto conocidas como innovadoras de
+                                                                expandir tu imperio en amplios paisajes.</p>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 mb-3">
+                                                    <div class="card">
+                                                        <img class="img-fluid" alt="100%x280"
+                                                            src="/img/novedades/hogwarts.jpeg">
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Hogwarts</h4>
+                                                            <p class="card-text">Tu personaje es un alumno o alumna del
+                                                                famoso colegio que tiene la clave de un antiguo secreto
+                                                                que amenaza con destruir el mundo mágico. Ahora puedes
+                                                                tomar el control de la acción y ser el centro de tu
+                                                                propia aventura.</p>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 mb-3">
+                                                    <div class="card">
+                                                        <img class="img-fluid" alt="100%x280"
+                                                            src="/img/novedades/octopath.jpg">
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Octopath Traveler</h4>
+                                                            <p class="card-text">Emprenden un viaje único mientras se
+                                                                adentran en una nueva y apasionante época. ¿Adónde te
+                                                                dirigirás? ¿Qué harás al llegar? ¿Qué historia
+                                                                rememorarás? Ante ti se extiende una infinitud de
+                                                                caminos.</p>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="row">
+
+                                                <div class="col-md-4 mb-3">
+                                                    <div class="card">
+                                                        <img class="img-fluid" alt="100%x280"
+                                                            src="/img/novedades/resident.jpeg">
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Resident Evil 2</h4>
+                                                            <p class="card-text"> Los muertos parecen volver a la vida y
+                                                                su único objetivo es alimentarse de carne fresca. Entre
+                                                                el caos, Leon S. Kennedy, un poli novato, y Claire
+                                                                Redfield, una estudiante en busca de su hermano perdido.
+                                                            </p>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 mb-3">
+                                                    <div class="card">
+                                                        <img class="img-fluid" alt="100%x280"
+                                                            src="/img/novedades/sims.png">
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">The sims 4</h4>
+                                                            <p class="card-text">Juega a la vida. Los Sims 4 es el juego
+                                                                de simulación social definitivo: crea personajes únicos,
+                                                                construye casas de ensueño, juega a la vida como quieras
+                                                                y deja que se desata el caos por donde quiera que pases.
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 mb-3">
+                                                    <div class="card">
+                                                        <img class="img-fluid" alt="100%x280"
+                                                            src="/img/novedades/zoo.png">
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Zoo Tycoon</h4>
+                                                            <p class="card-text"> Zoo Tycoon te permitirá crear el zoo
+                                                                de tus sueños y acercarte a tus animales preferidos e
+                                                                interaccionar con ellos. Tus animales favoritos están
+                                                                aquí y los visitantes ya están haciendo cola en la
+                                                                entrada.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <h2>Noticias</h2>
+                <div class="row">
+                
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <img class="img-fluid" alt="100%x280" src="/img/noticias/mando.png">
+                            <div class="card-body">
+                                <h4 class="card-title">Mando pro PS5</h4>
+                                <p class="card-text">El mando pro de 240 euros de PS5 tiene menos batería que el normal y además es bastante más pequeña, como demuestran estas imágenes.</p>
+        
+                            </div>
+        
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <img class="img-fluid" alt="100%x280" src="/img/noticias/monster.jpeg">
+                            <div class="card-body">
+                                <h4 class="card-title">Monster Hunter Rise</h4>
+                                <p class="card-text">Monster Hunter Rise: Sunbreak pone fecha a un evento que añadirá nuevos monstruos y más novedades únicas que encontraras en frostgames.</p>
+        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <img class="img-fluid" alt="100%x280" src="/img/noticias/harry.jpeg">
+                            <div class="card-body">
+                                <h4 class="card-title">Howards Legacy</h4>
+                                <p class="card-text">Si quieres ser malvado, sé malvado": Hogwarts Legacy no te juzgará si usas las peores maldiciones del mundo de Harry Potter.</p>
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-2"></div>
+        </div>
+    </section>
+      <!-- Footer -->
+
+<footer class="text-center text-lg-start text-muted"style= "background-color: #82ACF5"margin>
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column 3-->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- LOGO IZQUIERDA -->
+            <a class="navbar-brand" href="#"><img src="/img/logo-prototipo.png" alt="logo-nav"
+                width="100px" height="100px"></a>
+          </div>
+        <!-- Grid column 2-->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- REDES SOCIALES -->
+            <h6 class="text-uppercase fw-bold mb-4"style="color: #4850A8;">
+              Redes sociales
+            </h6>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="#4850A8" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+            </svg>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="#4850A8" class="bi bi-twitter" viewBox="0 0 16 16">
+                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+            </svg>
+           
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="#4850A8" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+           </svg>
+          </div>
+          <!-- Grid column 3 -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+            <!-- ENLACES -->
+            <h6 class="text-uppercase fw-bold mb-4"style="color: #4850A8;">
+              terminos y condiciones 
+            </h6>
+            <p style="color: #4850A8;">
+              <a href="#!" class="testyle="color: #4850A8;xt-center">Preguntas frecuentes</a>
+            </p>
+            <p style="color: #4850A8;">
+              <a href="#!" class="text-center">Ayuda</a>
+            </p>
+          </div>
+          <!-- Grid column 4-->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- CONTACTOS -->
+            <h6 class="text-uppercase fw-bold mb-4"style="color: #4850A8;">Contactanos</h6>
+            <p style="color: #4850A8 ;"><i class="me-3"></i>Sevilla, 41210, ES</p>
+            <p style="color: #4850A8;"><i class="me-3"></i>+34 635 289 501</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Copyright -->
+    <div class="text-center p-4 text-white">
+      Â© 2021 Copyright: All rights reserved.
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</body>
+
+</html>

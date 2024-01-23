@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <script src="jquery.js"></script>
+    <script>
+        $(function () {
+            $("#carrito").load("comprobarCarro.php");
+        });
+    </script>
+
+</head>
+<div class="row posicionfija mx-0">
+    <div class="col-sm 12 col-md-2 col-xl-3">&nbsp;</div>
+    <div class="col-sm 12 col-md-8 col-xl-6 ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-* my-navbar mt-2">
+            <div class="container-fluid  top-0 start-0">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="Index.html"><img src="/img/logo-prototipo.png" alt="logo-nav" width="60px"
+                        height="60px"></a>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav d-flex flex-row justify-content-start">
+                        <div class="d-flex flex-row">
+                            <div class="dropdown">
+                                <button type="button" class="btn dropdown-toggle button2" data-bs-toggle="dropdown"
+                                    aria-expanded="false" id="droper">
+                                    <span></span> <span></span> <span></span> <span></span>
+                                    <a id="droper">Catalogo</a>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-right menutransparente multicolumn">
+                                    <div class="container-fluid">
+                                        <li>
+                                            <hr class=" dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="resbusqueda.php?categorias=Todos">Todos los
+                                                Juegos</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <div class="container-fluid multicolumn">
+                                            <div class="row">
+                                                <div class="col-2">
+                                                    <tr>
+                                                        <li><a class="dropdown-item"
+                                                                href="resbusqueda.php?categorias=Terror">Terror</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item"
+                                                                href="resbusqueda.php?categorias=Fantasia">Fantasia</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item"
+                                                                href="resbusqueda.php?categorias=Aventura">Rol</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item"
+                                                                href="resbusqueda.php?categorias=Estrategia">Estrategia</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item"
+                                                                href="resbusqueda.php?categorias=Simulacion">Simulacion</a>
+                                                        </li>
+                                                    </tr>
+                                                </div>
+
+                                                <div class="col-2">
+                                                    <tr>
+                                                        <li><a class="dropdown-item"
+                                                                href="resbusqueda.php?categorias=Un jugador">Un
+                                                                Jugador</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item"
+                                                                href="resbusqueda.php?categorias=Multijugador">Multijugador</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item"
+                                                                href="resbusqueda.php?categorias=Finales multiples">Finales
+                                                                Múltiples</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item"
+                                                                href="resbusqueda.php?categorias=Belico">Bélicos</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item"
+                                                                href="resbusqueda.php?categorias=Construccion">Construcción</a>
+                                                        </li>
+                                                    </tr>
+                                                </div>
+
+                                                <div class="col-2">
+                                                    <tr>
+                                                        <li><a class="dropdown-item"
+                                                                href="resbusqueda.php?categorias=Isometrico">Isométricos</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item"
+                                                                href="resbusqueda.php?categorias=Gestion">Gestion</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item"
+                                                                href="resbusqueda.php?categorias=Supervivencia">Supervivencia</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item"
+                                                                href="resbusqueda.php?categorias=Sandbox">Sandbox</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item"
+                                                                href="resbusqueda.php?categorias=Buena trama">Buena
+                                                                trama</a>
+                                                        </li>
+                                                    </tr>
+                                                </div>
+
+                                                <div class="col-2">
+                                                    <tr>
+                                                        <li><a class="dropdown-item"
+                                                                href="resbusqueda.php?categorias=Gran banda sonora">Gran
+                                                                banda sonora</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item"
+                                                                href="resbusqueda.php?categorias=Para Adultos">Para
+                                                                adultos</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item"
+                                                                href="resbusqueda.php?categorias=Mitos y leyendas">Mitos
+                                                                y leyendas</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item"
+                                                                href="resbusqueda.php?categorias=Por turnos">Por
+                                                                turnos</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item"
+                                                                href="resbusqueda.php?categorias=Aventura">Aventura</a>
+                                                        </li>
+                                                    </tr>
+                                                </div>
+
+                                                <div class="col-2">
+                                                    <tr>
+                                                        <li><a class="dropdown-item"
+                                                                href="resbusqueda.php?categorias=Casuales">Casuales</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item"
+                                                                href="resbusqueda.php?categorias=Dificiles">Dificiles</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item"
+                                                                href="resbusqueda.php?categorias=Mundo abierto">Mundo
+                                                                abierto</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item"
+                                                                href="resbusqueda.php?categorias=Comedia">Comedia</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item"
+                                                                href="resbusqueda.php?categorias=Cinematografica">Cinematografico</a>
+                                                        </li>
+                                                    </tr>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </ul>
+
+
+                            </div>
+                            <li><a href="noticias.html"><button class="button2 borde pt-1" type="submit">
+                                        <span></span> <span></span> <span></span> <span></span>
+                                        Noticias
+                                    </button></a></li>
+                            <!--BUSQUEDA-->
+                            <div class="dropdown">
+                                <button type="button" class="btn dropdown-toggle button2" data-bs-toggle="dropdown"
+                                    aria-expanded="false" id="droper">
+                                    <span></span> <span></span> <span></span> <span></span>
+                                    <a id="droper">Busqueda </a>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu menutransparente busque">
+                                    <li>
+                                        <form class="form-inline ml-auto" action="resbusqueda.php" method="GET">
+                                            <div class="row pe-0">
+                                                <div class="col-xl-1">&nbsp;</div>
+                                                <div class="col-xl-11">
+                                                    <div class="form-outline w-auto  d-inline-block">
+
+                                                        <input type="search" id="barraBusqueda" name="busqueda"
+                                                            class="form-control-dropdown py-1" required />
+
+                                                        <button type="submit" class="btn bg-transparent ">
+                                                            <i class="">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" fill="white" class="bi bi-search mb-1"
+                                                                    viewBox="0 0 16 16">
+                                                                    <path
+                                                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                                                </svg>
+                                                            </i>
+                                                        </button>
+
+                                                    </div>
+                                                </div>
+
+                                        </form>
+                                    </li>
+                                    <li>
+                                    </li>
+                            </div>
+                    </ul>
+                </div>
+                <!--BUSQUEDA-->
+             </div>
+            </ul>
+            <ul class="nav navbar-nav d-flex flex-row justify-content-end">
+                <div class="d-flex justify-content-end">
+                    <li>
+                        <span></span> <span></span> <span></span> <span></span>
+                        <p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</p>
+                    </li>
+                    <!--BOTON CARRO-->
+                    <li><a href="carrito.php"><button class="button2 borde" type="submit">
+                                <span></span> <span></span> <span></span> <span></span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-cart3" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                </svg>
+                                <numerito class='badge badge-warning' id='lblCartCount'>       <span id="carrito"></span>
+                                </numerito>
+                            </button></a></li>
+                    <!--TERMINA BOTON CARRO-->
+                    <li class="pe-2">
+                            <div id="iconoUsuario"><div>
+
+
+                                    <script>
+                                        // Realizar una solicitud AJAX a check_session.php
+                                        var iconoBlanco = '<form method="post" action="login.php"><button class="button2 borde" type="submit"><span></span> <span></span> <span></span><span></span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16"><path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" /><path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" /></svg></button></form>';
+                                        var iconoAzul = '<form method="post" action="profileInfo.php"><button class="button2 borde" type="submit"><span></span> <span></span> <span></span><span></span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#8ED1F5" class="bi bi-person-circle" viewBox="0 0 16 16"><path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" /><path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" /></svg></button></form>';
+                                        var xhr = new XMLHttpRequest();
+                                        xhr.open('GET', 'check_session.php', true);
+                                        xhr.onload = function () {
+                                            if (xhr.responseText == "true") {
+                                                // La sesión está iniciada, cambia el contenido de la página
+                                                document.getElementById('iconoUsuario').innerHTML = iconoAzul;
+                                                console.log("Usuario Logado");
+                                            }
+                                            if (xhr.responseText == "false"){
+                                                // La sesión no está iniciada, cambia el contenido de la página
+                                                document.getElementById('iconoUsuario').innerHTML = iconoBlanco;
+                                                console.log('Usuario NO logado');
+                                            }
+                                        };
+
+                                        xhr.send();
+
+                                        var numcarro = new XMLHttpRequest();
+                                        numcarro.open('GET','check_carro.php',true);
+                                        numcarro.onreadystatechange = function() {
+                                            if (numcarro.readyState === 4 && numcarro.status === 200) {
+                                                document.getElementById("lblCartCount").innerHTML+=numcarro.responseText;
+                                            }
+                                        };
+                                        numcarro.send();
+                                    </script>
+                        </a>
+                    </li>
+                </div>
+            </ul>
+    </div>
+</div>
+</nav>
+</div>
+<div class="col-sm 12 col-md-2 col-xl-3">&nbsp;</div>
+</div>
+
+</html>
